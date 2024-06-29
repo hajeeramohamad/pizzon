@@ -25,7 +25,7 @@ export default async function pizzaList() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {pizzas.map((pizza) => (
-        <Link href={ '/users/product/' + pizza.title } key={pizza._id}>
+        <Link href={ '/users/product/' + pizza._id } key={pizza._id}>
           <div className="col-span-1 border-2 rounded-2xl w-full p-8">
               <img src={pizza.img} alt={"pizza"}></img>
             
