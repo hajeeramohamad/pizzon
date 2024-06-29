@@ -14,7 +14,7 @@ async function collectPizza(pizza_id) {
 }
 
 export default async function Details({ params }) {
-  const pizza = await collectPizza(params.pizza_id);
+  const pizza = await collectPizza(params.id);
 
   if (!pizza) {
     return (
