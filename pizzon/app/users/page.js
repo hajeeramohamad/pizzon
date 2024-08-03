@@ -1,13 +1,12 @@
 import React from "react";
-import ProductCard from "@/app/components/ProductCard";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import ProductCard from "../components/ProductCard";
+
+
 
 const PizzaCard = () => {
-  
   return (
     <main>
-      <Navbar />
+    
       <div className="flex mt-10">
         <div className="w-1/2">
           <button className="cursor-pointer bg-[#FBB200] mt-50 px-5 py-3 text-lg md:text-xl rounded-full flex font-medium text-white tracking-wider align-middle justify-center">
@@ -18,11 +17,12 @@ const PizzaCard = () => {
         <div className="flex justify-between gap-[10vw]">
           <p className="font-bold px-8 w-[100%]">Showing all 9 results</p>
           <select
-            placeholder="Default Sorting"
-            className="w-md:w border-2 rounded-lg px-4 py-2 text-lg cursor-pointer"
+            placeholder="Default Sorting "
+            className="w-md:w border-2 rounded-lg px-4 py-2 text-lg cursor-pointer" 
+            id="sort"
           >
             <option>Default Sorting</option>
-            <option>A - Z</option>
+            <option id="list">A - Z</option>
           </select>
         </div>
       </div>
@@ -33,7 +33,7 @@ const PizzaCard = () => {
       <br></br>
       <ProductCard />
       <br></br>
-      <Footer/>
+     
     </main>
   );
 };

@@ -1,7 +1,4 @@
-export default {
-  success: true,
-  data: {
-    pizza: [
+const productsArray = [
       {
         _id: "6571c6faffe222524b1aa614",
         title: "Pokemon Pizza",
@@ -84,6 +81,18 @@ export default {
         ],
         __v: 0,
       },
-    ],
-  },
-};
+    ]
+
+      function getProductData(id) {
+        let productData = productsArray.find(product => product.id === id);
+      
+      
+        return productData;
+      
+      }
+     
+        
+
+    export { productsArray, getProductData };
+
+

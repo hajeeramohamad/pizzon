@@ -1,10 +1,20 @@
-import cartProvider from "../../../cartContext";
+import Navbar from "../../../components/navbar";
+
+import Footer from "../../../components/footer";
+
+async function collectPizza() {
+  const res = await fetch(
+    "https://pizza-ordering-anno.onrender.com/api/products"
+  );
+  return res.json();
+}
+
 export default async function Details() {
-  const pizza = await collectPizza();
+  const pizza = await collectPizza(id);
 
   return (
-  
-      <cartProvider>
+    <>
+      <Navbar />
       <main className="flex flex-col md:flex-row items-start mx-auto p-4 my-20 gap-4">
         <div className="md:w-2/3 w-full mb-4 md:mb-0">
           <div className="overflow-auto px-5">
@@ -20,7 +30,7 @@ export default async function Details() {
                 </tr>
               </thead>
               <tbody>
-                {/* <tr className="flex-col justify-start items-start"></tr> */}
+                <tr className="flex-col justify-start items-start"></tr>
 
                 <tr>
                   <td className="border-b p-3 whitespace-nowrap align-top">
@@ -43,7 +53,6 @@ export default async function Details() {
                     Quantity: 1
                   </td>
                 </tr>
-             
               </tbody>
             </table>
           </div>
@@ -67,8 +76,7 @@ export default async function Details() {
           </div>
         </div>
       </main>
-     
-
-    </cartProvider>
+      <Footer />
+    </>
   );
 }

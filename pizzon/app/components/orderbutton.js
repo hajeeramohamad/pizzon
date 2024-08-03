@@ -2,13 +2,16 @@
 import Link from "next/link";
 import { FaShoppingCart } from "react-icons/fa";
 
-export default function OrderButton(props) {
+export default function OrderButton() {
+
+``
   return (
-    <Link href="/users">
-      <button className="cursor-pointer bg-[#FBB200] px-8 py-3 text-lg md:text-xl rounded-full flex font-medium text-white tracking-wider gap-4">
+  
+      <Link href="/users" className="cursor-pointer bg-[#FBB200] px-6 py-3 text-lg rounded-full flex tracking-wider font-medium text-white gap-4"
+      >
         <FaShoppingCart className="" />
         ORDER NOW
-      </button>
-    </Link>
+      </Link>
+    
   );
 }

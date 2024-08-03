@@ -1,6 +1,5 @@
 
 import OrderButton from "./orderbutton";
-import AddToCart from "@/app/components/AddToCart";
 import { FaStar } from "react-icons/fa";
 import Link from "next/link";
 

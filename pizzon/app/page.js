@@ -1,10 +1,6 @@
 
-import Footer from "./components/footer"
 import OrderButton from "./components/orderbutton";
-import Navbar from "./components/navbar";
-import ProductCard from "@/app/components/ProductCard";
-import { Space_Mono } from "next/font/google";
-
+import ProductCard from "./components/ProductCard";
 
 
 export default function Home() {
@@ -12,7 +8,7 @@ export default function Home() {
 
   return (
     <main className="">
-      <Navbar />
+
 
       <section className="flex flex-col md:flex-row md:h-screen mx-auto p-6 relative">
         <div className="flex md:flex-col md:w-1/2 justify-center text-center md:text-left p-4">
@@ -34,25 +30,25 @@ export default function Home() {
           <img
             src="./images/raisins-pizza.png"
             className="w-80 h-70"
-          ></img>
+          />
           <img
             src="./images/half_yellow.png"
             className="hidden lg:block h-85 w-70 absolute top-0 right-0 z-[-10]"
-          ></img>
+          />
           <img
             src="./images/pizza-onion.png"
             className="lg:block absolute bottom-150 left-50 z-[-10] "
-          ></img>
+          />
           <img
             src="./images/pizzaa.png"
             className="absolute bottom-90 right-80 z-[-10] w-60 h-60"
-          ></img>
+          />
         </div>
       </section>
 
       <section className="flex flex-col-reverse md:flex-row md:h-screen mx-auto p-4 gap-4">
         <div className="md:w-1/3 justify-center text-center m-auto">
-          <img src="./images/pieces.png" className="w-60"></img>
+          <img src="./images/pieces.png" className="w-60"/>
         </div>
         <div className="flex md:flex-col md:w-2/3 justify-center text-center md:text-left relative p-4">
           <div className="w-full md:w-[50%]">
@@ -64,7 +60,7 @@ export default function Home() {
               but the majority have
             </p>
             <div className="hidden md:block absolute bottom-25 left-[65%]">
-              <img src="./images/garlic.png" className="w-20 h-20"></img>
+              <img src="./images/garlic.png" className="w-20 h-20"/>
             </div>
           </div>
         </div>
@@ -78,17 +74,17 @@ export default function Home() {
           Our Strength
         </p>
 
-        <h1 classname="text-4xl md:text-3xl tracking-wider font-semibold text-black leading-[1.7] mb-3">
+        <h1 className="text-4xl md:text-3xl tracking-wider font-semibold text-black leading-[1.7] mb-3">
           Why we are the best?
         </h1>
         <img
           src="./images/pizza-cut.png"
           className="absolute top-[20%] md:top-[15%] right-0 w-30 h-20"
-        ></img>
+        />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="col-span-1">
-            <img src="./images/all-kinds-of-foods.png" h-10 w-5></img>
+            <img src="./images/all-kinds-of-foods.png"/>
             <h1 className="text-xl font-bold text-black mt-5">
               All Kinds of Food
             </h1>
@@ -98,7 +94,7 @@ export default function Home() {
             </p>
           </div>
           <div className="col-span-1">
-            <img src="./images/fresh-foods.png"></img>
+            <img src="./images/fresh-foods.png"/>
             <h1 className="text-xl font-bold text-black mt-5">
               All Kinds of Food
             </h1>
@@ -108,7 +104,7 @@ export default function Home() {
             </p>
           </div>
           <div className="col-span-1">
-            <img src="./images/best-taste.png"></img>
+            <img src="./images/best-taste.png"/>
             <h1 className="text-xl font-bold text-black mt-5">
               All Kinds of Food
             </h1>
@@ -118,7 +114,7 @@ export default function Home() {
             </p>
           </div>
           <div className="col-span-1">
-            <img src="./images/on-time-delivery.png"></img>
+            <img src="./images/on-time-delivery.png"/>
             <h1 className="text-xl font-bold text-black mt-5">
               All Kinds of Food
             </h1>
@@ -137,7 +133,7 @@ export default function Home() {
       <img
         src="./images/leaf.png"
         className="absolute left-0 w-12 h-12"
-      ></img>
+      />
       <section className="mx-auto py-20 px-relative">
         <p className="text-2xl md:text-3xl font-semibold mb-3 mt-2 tracking-wider">
           Customer Feedback
@@ -150,7 +146,7 @@ export default function Home() {
             <img
               src="./images/man_1.jpg"
               className="mx-auto rounded-full"
-            ></img>
+            />
             <h1>Takar Bowa</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and type setting
@@ -161,7 +157,7 @@ export default function Home() {
             <img
               src="./images/man_2.jpg"
               className="mx-auto rounded-full"
-            ></img>
+            />
             <h1>Takar Bowa</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and type setting
@@ -172,7 +168,7 @@ export default function Home() {
             <img
               src="./images/man_3.jpg"
               className="mx-auto rounded-full"
-            ></img>
+            />
             <h1>Takar Bowa</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and type setting
@@ -183,7 +179,7 @@ export default function Home() {
             <img
               src="./images/man_4.jpg"
               className="mx-auto rounded-full"
-            ></img>
+            />
             <h1>Takar Bowa</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and type setting
@@ -192,7 +188,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer />
+  
     </main>
   );
 }
