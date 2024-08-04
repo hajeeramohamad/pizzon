@@ -1,6 +1,6 @@
 import cartProvider from "../../../cartContext";
 export default async function Details() {
-  const pizza = await collectPizza();
+ 
 
   return (
   
